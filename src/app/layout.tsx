@@ -1,7 +1,7 @@
 import "~/styles/globals.css";
 import "@uploadthing/react/styles.css";
-// import TopNav from "~/_components/topnav";
-import TopNav from "~/app/_components/topnav"
+import TopNav from "~/_components/topnav";
+// import TopNav from "~/app/_components/topnav"
 import { ClerkProvider } from '@clerk/nextjs'
 
 
@@ -35,9 +35,11 @@ export default function RootLayout({
              */
             routerConfig={extractRouterConfig(ourFileRouter)}
           />
-        <body className="flex flex-col gap-4">
-          <TopNav/>
-          {children}
+        <body className="">
+          <div className="grid h-screen grid-rows-[auto,1fr]">
+            <TopNav/>
+            <main className="overflow-y-scroll">{children}</main>
+          </div>
           {modal}
           <div id="modal-root" />
         </body>

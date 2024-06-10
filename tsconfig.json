@@ -37,6 +37,6 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts"
-, "src/app/_components/topnav.jsx"  ],
+, "src/_components/topnav.jsx"  ],
   "exclude": ["node_modules"]
 }
