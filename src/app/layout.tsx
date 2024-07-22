@@ -46,7 +46,7 @@ export default function RootLayout({
              */
             routerConfig={extractRouterConfig(ourFileRouter)}
           />
-        <body className="">
+        <body className="font-sans dark">
           <div className="grid h-screen grid-rows-[auto,1fr]">
             {/* <TopNav/> */}
             <MeraNav/>
